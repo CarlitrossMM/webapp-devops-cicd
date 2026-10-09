@@ -80,7 +80,7 @@ const accepted = (res, data = [], message = 'Solicitud aceptada para procesamien
 app.get('/health', (req, res) => res.status(200).json({ status: 'ok' }));
 app.get('/api/health', (req, res) => {
     res.status(200).json({
-        status: 'UP',
+        status: 'UPy',
         timestamp: new Date().toISOString(),
         uptime: process.uptime()
     });
