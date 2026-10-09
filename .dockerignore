@@ -1,0 +1,17 @@
+node_modules
+npm-debug.log*
+*.log
+.env*
+data
+database.sqlite
+backup.sqlite
+*.sqlite
+*.db
+tests
+coverage
+.git
+.github
+.gitignore
+README.md
+Dockerfile
+docker-compose*.yml

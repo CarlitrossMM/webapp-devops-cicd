@@ -1,0 +1,31 @@
+# Dependencias
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
+# Reportes de pruebas y cobertura
+coverage/
+.nyc_output/
+
+# Bases de datos SQLite locales y datos temporales
+data/
+*.sqlite
+*.sqlite3
+*.db
+backup.sqlite
+
+# Archivos de sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,33 @@
+{
+  "name": "webapp-api",
+  "version": "1.0.0",
+  "description": "API REST con SQLite y Docker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest --runInBand --verbose --reporters=default",
+    "test:coverage": "jest --runInBand --coverage"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/tests/testEndpoints.js"
+    ],
+    "collectCoverageFrom": [
+      "server.js",
+      "!**/node_modules/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 70
+      }
+    }
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "supertest": "^7.3.0"
+  }
+}
