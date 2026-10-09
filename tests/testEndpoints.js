@@ -32,11 +32,11 @@ describe('API HTTP - pruebas de endpoints', () => {
     });
 
     describe('GET /api/health', () => {
-        it('responde 200 con estado UP, uptime y timestamp', async () => {
+        it('responde 200 con estado UPy, uptime y timestamp', async () => {
             const response = await request(app).get('/api/health');
 
             expect(response.status).toBe(200);
-            expect(response.body.status).toBe('UP');
+            expect(response.body.status).toBe('UPy');
             expect(typeof response.body.uptime).toBe('number');
             expect(typeof response.body.timestamp).toBe('string');
         });
